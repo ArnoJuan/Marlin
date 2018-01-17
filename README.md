@@ -62,8 +62,8 @@ MK8擠出齒輪，齒輪直徑11mm<br/>
 
 # BL-Touch auto-leveling related commands:<br/>
 X_PROBE_OFFSET_FROM_EXTRUDER 2  // X offset: -left  +right  [of the nozzle]<br/>
-Y_PROBE_OFFSET_FROM_EXTRUDER -50  // Y offset: -front +behind [the nozzle]<br/>
-Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]<br/>
+Y_PROBE_OFFSET_FROM_EXTRUDER -50  // Y offset: -front +behind [of the nozzle]<br/>
+Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [of the nozzle]<br/>
 G28 (X、Y歸零，Z回中間歸零)<br/>
 G29 (產生3x3偵測矩陣)<br/>
 M851 Z-1.7 (調整Z軸高度)<br/>
