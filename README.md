@@ -32,7 +32,7 @@ T8 screw elimination gap 2set<br/>
 3010 Silent fan 2pcs (Extruder head, one spare)<br/>
 
 # Custom parameters
-X&Y axis:<br/>
+X & Y axis:<br/>
 GT2 belt & 16 teeth synchronous wheel<br/>
 GT2 belt pitch 2mm, a circle of 16 teeth that move around in a circle 32mm.<br/>
 Stepping motor step angle of 1.8 degrees, the chip-driven 16 microstep.<br/>
