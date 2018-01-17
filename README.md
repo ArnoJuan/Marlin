@@ -17,7 +17,7 @@ MK8 Extruder 1 set<br/>
 TFT3.5" Touch screen 2pcs (one spare)<br/>
 Broken material detection 1pcs<br/>
 Omron switch 2pcs (for X & Y axis)<br/>
-TL-Touch 1pcs (for Z axis)<br/>
+BL-Touch 1pcs (for Z axis)<br/>
 Thermistor temperature detection 2pcs (Extruder head, heat bed)
 300W Power supply 1pcs<br/>
 
@@ -33,7 +33,7 @@ T8 screw elimination gap 2set<br/>
 
 # Custom parameters
 X&Y axis:<br/>
-GT2belt & 116 teeth synchronous wheel<br/>
+GT2 belt & 16 teeth synchronous wheel<br/>
 GT2 belt pitch 2mm, a circle of 16 teeth that move around in a circle 32mm.<br/>
 Stepping motor step angle of 1.8 degrees, the chip-driven 16 microstep.<br/>
 It means that it takes (360 / 1.8) x 16 = 3200 steps to complete a revolution.<br/>
