@@ -1,5 +1,5 @@
 # Marlin
-MKS Gen 1.4 + BL-Touch customized version.
+MKS Gen 1.4 with BL-Touch customized version.
 
 # Description
 Model：<br/>
@@ -42,27 +42,50 @@ GT2皮帶齒距2mm，一圈16齒表示轉一圈移動32mm<br/>
 Z axis:<br/>
 T8螺桿導程8mm，表示轉一圈會移動8mm<br/>
 步進馬達步進角1.8度，晶片驅動16微步<br/>
-表示轉一圈需要(360/1.8)*16=3200步<br/>
+表示轉一圈需要(360/1.8)x16=3200步<br/>
 此軸移動1mm需要3200/8=400步<br/>
 
 Extruder:<br/>
 MK8擠出齒輪，齒輪直徑11mm<br/>
-圓周為11*PI=34.54mm<br/>
+圓周為11xPI=34.54mm<br/>
 步進馬達步進角1.8度，晶片驅動16微步<br/>
-表示轉一圈需要(360/1.8)*16=3200步<br/>
+表示轉一圈需要(360/1.8)x16=3200步<br/>
 此軸移動1mm需要3200/34.54=92.646步<br/>
-公式:(3200*擠出機齒輪比)/(pi*擠出齒輪直徑)<br/>
+公式:(3200x擠出機齒輪比)/(pix擠出齒輪直徑)<br/>
 
 # IC chip:<br/>
 步進馬達1.3A，A4988 Rs=0.1Ω、電流上限2A，Vref應設定成1.6V<br/>
-(1.4/0.7)*8*0.1Ω = 1.6<br/>
-目前實際設定值為0.65V/(8*0.1Ω) = 0.8125A 轉換RMS電流 => 0.815A/1.41 = 0.578A<br/>
+(1.4/0.7)x8x0.1Ω = 1.6<br/>
+目前實際設定值為0.65V/(8x0.1Ω) = 0.8125A 轉換RMS電流 => 0.815A/1.41 = 0.578A<br/>
 步進馬達1.3A，TMC2130晶片<br/>
-目前實際設定值為1.0V*1.77/2.5 = 0.71A，加速度設為1000<br/>
+目前實際設定值為1.0Vx1.77/2.5 = 0.71A，加速度設為1000<br/>
+
+/**
+ *   Z Probe to nozzle (X,Y) offset, relative to (0, 0).
+ *   X and Y offsets must be integers.
+ *
+ *   In the following example the X and Y offsets are both positive:
+ *   #define X_PROBE_OFFSET_FROM_EXTRUDER 10
+ *   #define Y_PROBE_OFFSET_FROM_EXTRUDER 10
+ *
+ *      +-- BACK ---+
+ *      |           |
+ *    L |    (+) P  | R <-- probe (20,20)
+ *    E |           | I
+ *    F | (-) N (+) | G <-- nozzle (10,10)
+ *    T |           | H
+ *      |    (-)    | T
+ *      |           |
+ *      O-- FRONT --+
+ *    (0,0)
+ */
+#define X_PROBE_OFFSET_FROM_EXTRUDER 2  // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -50  // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
 
 # BL-Touch auto-leveling related commands:<br/>
 G28 (X、Y歸零，Z回中間歸零)<br/>
-G29 (產生3*3偵測矩陣)<br/>
+G29 (產生3x3偵測矩陣)<br/>
 M851 Z-1.7 (調整Z軸高度)<br/>
 M420 V (檢視偵測矩陣)<br/>
 M420 S1 (啟用自動調平功能)<br/>
