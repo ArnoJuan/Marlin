@@ -1,13 +1,14 @@
 # Marlin
 MKS Gen 1.4 + BL-Touch customized version.
 
-# 機型：
-# Prusa i3 DIY 鋁擠線軌版
+# Description：
+*機型：
+Prusa i3 DIY 鋁擠線軌版
 
-# 韌體：
-# Marlin 1.1.8
+*韌體：
+Marlin 1.1.8
 
-電機：
+*電機：
 MKS Gen v1.4 一體板 (Arduino Mega 2560 R3 + Ramps 1.4)
 TMC2130 5顆 (XYZZE，備用A4988 8顆)
 馬達整流濾波器 4個 (XYZZ)
@@ -20,7 +21,7 @@ TL-Touch 1個
 熱敏電阻溫度偵測 2個 (噴嘴、熱床)
 300W電源供應器 1個
 
-機構：
+*機構：
 歐規2020鋁材
 三軸線軌 (XYYZZ共5條)
 梅花聯軸器 2顆
