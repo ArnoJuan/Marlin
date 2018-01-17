@@ -27,7 +27,7 @@ Line track - Triaxial rail(for XYYZZ, total 5pcs)<br/>
 Plum coupling 2pcs<br/>
 T8 screw 8mm lead 2pcs<br/>
 T8 screw elimination gap 2set<br/>
-5125Mini blower 1pcs (for TMC2130 Chip cooling)<br/>
+5125 Mini blower 1pcs (for TMC2130 Chip cooling)<br/>
 4010 Silent fan 3pcs (Board 2pcs、Extruder head 1pcs)<br/>
 3010 Silent fan 2pcs (Extruder head, one spare)<br/>
 
