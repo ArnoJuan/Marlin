@@ -53,7 +53,7 @@ It means that it takes (360 / 1.8) x 16 = 3200 steps to complete a revolution.<b
 This axis moves 1mm requires 3200 / 34.54 = 92.646 steps.<br/>
 Formula: (3200x Extruder gear ratio) / (pix extrusion gear diameter)<br/>
 
-# IC chip:<br/>
+# Stepper motor IC chip:<br/>
 Stepper motor 1.3A, A4988 Rs = 0.1Ω, current limit 2A, Vref should be set to 1.6V.<br/>
 (1.4/0.7)x8x0.1Ω = 1.6<br/>
 The current actual setting is 0.65V / (8 x 0.1Ω) = 0.8125A Convert RMS current => 0.815A / 1.41 = 0.578A<br/>
