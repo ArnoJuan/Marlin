@@ -53,14 +53,14 @@ MK8擠出齒輪，齒輪直徑11mm<br/>
 此軸移動1mm需要3200/34.54=92.646步<br/>
 公式:(3200*擠出機齒輪比)/(pi*擠出齒輪直徑)<br/>
 
-IC chip:<br/>
+# IC chip:<br/>
 步進馬達1.3A，A4988 Rs=0.1Ω、電流上限2A，Vref應設定成1.6V<br/>
 (1.4/0.7)*8*0.1Ω = 1.6<br/>
 目前實際設定值為0.65V/(8*0.1Ω) = 0.8125A 轉換RMS電流 => 0.815A/1.41 = 0.578A<br/>
 步進馬達1.3A，TMC2130晶片<br/>
 目前實際設定值為1.0V*1.77/2.5 = 0.71A，加速度設為1000<br/>
 
-BL-Touch auto-leveling related commands:<br/>
+# BL-Touch auto-leveling related commands:<br/>
 G28 (X、Y歸零，Z回中間歸零)<br/>
 G29 (產生3*3偵測矩陣)<br/>
 M851 Z-1.7 (調整Z軸高度)<br/>
@@ -71,7 +71,7 @@ M501 (載入EEPROM儲存參數)<br/>
 M502 (清除EEPROM參數)<br/>
 M503 (檢視EEPROM參數)<br/>
 
-Extruder head, heat bed temperature control auto tuning PID parameters:<br/>
+# Extruder head, heat bed temperature control auto tuning PID parameters:<br/>
 M303 E0 C8 S200 (自動調整擠出頭PID參數，溫度震盪8次後停止，目標溫度200度)<br/>
 M303 E-1 C8 S70 (自動調整熱床PID參數，溫度震盪8次後停止，目標溫度70度)<br/>
 若收到錯誤訊息"PID Autotune failed! Temperature too high"，代表初始測試條件會讓溫度超出目標溫度20度。<br/>
