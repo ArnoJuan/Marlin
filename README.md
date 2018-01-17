@@ -51,7 +51,7 @@ The circumference is 11xPI = 34.54mm<br/>
 Stepping motor step angle of 1.8 degrees, the chip-driven 16 microstep.<br/>
 It means that it takes (360 / 1.8) x 16 = 3200 steps to complete a revolution.<br/>
 This axis moves 1mm requires 3200 / 34.54 = 92.646 steps.<br/>
-Formula: (3200x Extruder gear ratio) / (pix extrusion gear diameter)<br/>
+Formula: (3200 x Extruder gear ratio) / (pix extrusion gear diameter)<br/>
 
 # Stepper motor IC chip:<br/>
 Stepper motor 1.3A, A4988 Rs = 0.1Ω, current limit 2A, Vref should be set to 1.6V.<br/>
