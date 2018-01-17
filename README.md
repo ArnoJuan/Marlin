@@ -18,7 +18,7 @@ TFT3.5" Touch screen 2pcs (one spare)<br/>
 Broken material detection 1pcs<br/>
 Omron switch 2pcs (for X & Y axis)<br/>
 BL-Touch 1pcs (for Z axis)<br/>
-Thermistor temperature detection 2pcs (Extruder head, heat bed)
+Thermistor temperature detection 2pcs (Extruder head, heat bed)<br/>
 300W Power supply 1pcs<br/>
 
 Organization：<br/>
